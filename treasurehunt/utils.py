@@ -1,12 +1,5 @@
-from typing import Dict, List, Optional
+from typing import Dict, Optional
 from env_configs import ENV_CONFIGS
-
-def print_training_result(
-        result: Dict,
-        metrics: List = ["episode_reward_min", "episode_reward_mean", "episode_reward_max", "episode_len_mean"]
-    ) -> None:
-    for m in metrics:
-        print(f'{m}: {round(result[m], 2)}')
 
 def get_env_config(
         env_name: str
@@ -21,3 +14,40 @@ def check_entity(entity: str) -> Optional[ValueError]:
             Valid entities include 'agents', 'walls', 'doors', 'plates', 'goals', or 'escapes'.
             Got entity={entity}.
         """)
+    
+def check_args():
+    pass
+
+def print_step(
+        step: int
+    ) -> None:
+    print("##############")
+    print(f"## STEP: {step} ##")
+    print("##############")
+    print()
+
+def print_actions(
+        actions: Dict
+    ) -> None:
+    print(f"ACTIONS: {actions}")
+    print()
+
+def print_results(
+        reward: Dict,
+        terminated: Dict,
+        truncated: Dict
+    ) -> None:
+        print("AFTER ACTIONS")
+        print(f"rewards: { {agent: round(reward, 2) for agent, reward in reward.items()} }")
+        print(f"terminated: {terminated}")
+        print(f"truncated: {truncated}")
+        print()
+
+def print_terminated(
+        reward: Dict
+    ) -> None:
+    print("################")
+    print("## TERMINATED ##")
+    print("################")
+    print()
+    print(f"Total Rewards: { {agent: round(reward, 5) for agent, reward in reward.items()} }")

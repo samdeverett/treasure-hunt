@@ -1,4 +1,4 @@
-NUM_TRAINING_ITERATIONS = 10
+import os
 
-# TODO make note that this must be changed per user
-ROOT = "/Users/samdeverett/ray_results"
+NUM_TRAINING_ITERATIONS = 1
+CHECKPOINT_DIR = os.path.join(os.getcwd(), 'checkpoints')
