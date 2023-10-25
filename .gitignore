@@ -1,4 +1,5 @@
 .DS_Store
+checkpoints/
 examples/
 single_agent/
 
