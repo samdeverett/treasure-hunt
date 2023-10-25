@@ -1,2 +1,3 @@
-# treasure-hunt
+# Treasure Hunt
+
 Multi-agent reinforcement learning environment
