@@ -4,7 +4,9 @@
     <img src="img/title.png" width="400px" />
 </p>
 
-A highly configurable multi-agent reinforcement learning environment with quality rendering.
+<p align="center">
+    A highly configurable multi-agent reinforcement learning environment with quality rendering.
+</p>
 
 <p align="center">
     <img src="img/cooperation.gif" width="185px" />
