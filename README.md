@@ -1,16 +1,14 @@
 **NOTE: under active refactor**
 
-<div align="center">
-  <img src="img/title.gif"
-       height="250" width="250" />
-</div>
+<p align="center">
+    <img width="400px" src="imgs/title.png" align="center"/>
+</p>
 
 A highly configurable multi-agent reinforcement learning environment with quality rendering.
 
-<div align="center">
-  <img src="img/cooperate.gif"
-       height="250" width="250" />
-</div>
+<p align="center">
+    <img width="185px" src="imgs/repo-4p.gif" align="center" />
+</p>
 
 ## Story
 *In collaboration with ChatGPT*
