@@ -10,7 +10,7 @@ from typing import Dict, Tuple
 import sys
 
 
-class MultiAgentPressurePlate(MultiAgentEnv):
+class TreasureHunt(MultiAgentEnv):
 
     def __init__(self, env_config: EnvContext):
         super().__init__()

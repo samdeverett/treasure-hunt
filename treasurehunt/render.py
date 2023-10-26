@@ -1,4 +1,4 @@
-from environment import MultiAgentPressurePlate
+from environment import TreasureHunt
 import argparse
 from utils import get_env_config
 import sys
@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     print(f"\n Rendering environment for env_name={args.env_name}. \n")
     env_config = get_env_config(args.env_name)
-    env = MultiAgentPressurePlate(env_config)
+    env = TreasureHunt(env_config)
     env.render()
     input()
     sys.exit()

@@ -1,7 +1,7 @@
 import os
 from constants import CHECKPOINT_DIR
 from ray.rllib.algorithms.algorithm import Algorithm
-from environment import MultiAgentPressurePlate
+from environment import TreasureHunt
 import argparse
 from utils import get_env_config, check_args, print_step, print_actions, print_results, print_terminated
 
@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     # Create environment.
     env_config = get_env_config(args.env_name)
-    env = MultiAgentPressurePlate(env_config)
+    env = TreasureHunt(env_config)
     obs, info = env.reset()
     env.render()
     

@@ -4,7 +4,7 @@ from constants import NUM_TRAINING_ITERATIONS
 import argparse
 from utils import get_env_config
 from ray.rllib.policy.policy import PolicySpec
-from environment import MultiAgentPressurePlate
+from environment import TreasureHunt
 from constants import CHECKPOINT_DIR
 import os
 
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     config = (
         PPOConfig()
         .environment(
-            env=MultiAgentPressurePlate,
+            env=TreasureHunt,
             env_config=env_config
         )
         .multi_agent(
