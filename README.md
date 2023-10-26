@@ -1,13 +1,13 @@
 **NOTE: under active refactor**
 
 <p align="center">
-    <img width="400px" src="imgs/title.png" align="center"/>
+    <img src="img/title.png" width="400px" />
 </p>
 
 A highly configurable multi-agent reinforcement learning environment with quality rendering.
 
 <p align="center">
-    <img width="185px" src="imgs/repo-4p.gif" align="center" />
+    <img src="img/cooperation.gif" width="185px" />
 </p>
 
 ## Story
