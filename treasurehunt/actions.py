@@ -5,4 +5,4 @@ class Actions(IntEnum):
     Down = 1
     Left = 2
     Right = 3
-    Noop = 4
+    Stay = 4

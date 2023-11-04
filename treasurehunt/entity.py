@@ -44,7 +44,7 @@ class Agent(Entity):
             if not self._detect_collision(env, proposed_pos):
                 self.x += 1
 
-        # Noop
+        # Stay
         else:
             pass
 
