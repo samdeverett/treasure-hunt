@@ -99,13 +99,10 @@ class Viewer:
         pyglet.resource.path = [os.path.join(script_dir, "icons")]
         pyglet.resource.reindex()
 
-        # self.img_apple = pyglet.resource.image("apple.png")
         self.img_agent = pyglet.resource.image("agent.png")
         self.img_wall = pyglet.resource.image('brick-wall.png')
         self.img_door = pyglet.resource.image('spiked-fence.png')
         self.img_escape = pyglet.resource.image('escape.png')
-        # self.img_door_left = pyglet.resource.image('doorway_left.png')
-        # self.img_door_right = pyglet.resource.image('doorway_right.png')
         self.img_plate_off = pyglet.resource.image('plate_off.png')
         self.img_plate_on = pyglet.resource.image('plate_on.png')
         self.goal = pyglet.resource.image('chest.png')

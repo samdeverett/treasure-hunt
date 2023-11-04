@@ -34,7 +34,7 @@ This environment was adapted from [Trevor McInroe](https://github.com/trevormcin
 Each agent has partial observability of the environment: they can observe exactly the number of units around them in each direction defined by the environment's `sensor_range` attribute. The observation is comprised of six 2D grids, one for each entity type (`Agent`, `Wall`, `Door`, `Plate`, `Goal`, `Escape`). These grids are flattened and concatenated. Pictured below is an illustration of the 2D grid and corresponding flattening for the `Door` entity observations of `Agent 0`. Finally, each agent's observation is concatenated with their `(x, y)` coordinates.
 
 <p align="center">
-    <img src="imgs/obs_example.png" width="325px"/>
+    <img src="img/obs_example.png" width="325px"/>
 </p>
 
 #### Action Space
