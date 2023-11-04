@@ -1,4 +1,7 @@
+"""An agent's potential actions."""
+
 from enum import IntEnum
+
 
 class Actions(IntEnum):
     Up = 0

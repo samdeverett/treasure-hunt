@@ -1,5 +1,4 @@
-"""
-The configuration for each environment.
+"""The configuration for each environment.
 
 A configuration is a dictionary with four key-value pairs:
     'layout': str, layout of the grid world (from TODO)

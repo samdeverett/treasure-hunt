@@ -1,3 +1,5 @@
+"""Renders the starting layout of an environment."""
+
 from environment import TreasureHunt
 import argparse
 from utils import get_env_config
@@ -10,8 +12,6 @@ parser.add_argument(
 
 if __name__ == "__main__":
     args = parser.parse_args()
-
-    print(f"\n Rendering environment for env_name={args.env_name}. \n")
     env_config = get_env_config(args.env_name)
     env = TreasureHunt(env_config)
     env.render()

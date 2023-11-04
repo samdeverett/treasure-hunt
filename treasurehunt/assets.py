@@ -11,89 +11,14 @@
 
 """
 
-LAYERS = {
-    'agents': 0,
-    'walls': 1,
-    'doors': 2,
-    'plates': 3,
-    'goals': 4,
-    'escapes': 5
-}
-
 LAYOUTS = {
-    
-	'BasicOneAgent': {
-        
-            'WALLS': [
-                  [0, 0],
-                  [1, 0],
-                  [2, 0],
-                  [3, 0],
-                  [4, 0],
-                  [5, 0],
-                  [8, 0]
-	      ],
-        
-		'DOORS': [
-                  [[6, 7], [0, 0]]
-		],
-        
-		'PLATES': [
-                  [1, 1]
-		],
-        
-		'AGENTS': [
-                  [3, 1]
-		],
-        
-		'GOALS': [
-                  [6, 4],
-                  [8, 6]
-		],
-        
-            'ESCAPES': [
-                  
-            ]
 
-	},
-    
-      'BasicTwoAgent': {
-        
-		'WALLS': [
-                  [0, 0],
-                  [1, 0],
-                  [2, 0],
-                  [3, 0],
-                  [4, 0],
-                  [5, 0],
-                  [8, 0]
-		],
-        
-		'DOORS': [
-                  [[6, 7], [0, 0]]
-		],
-        
-		'PLATES': [
-                  [1, 1],
-		],
-        
-		'AGENTS': [
+      'CooperativeTwoAgent': {
+          
+            'AGENTS': [
                   [3, 1],
                   [5, 1]
 		],
-        
-		'GOALS': [
-                  [3, 4],
-                  [5, 4]
-		],
-        
-            'ESCAPES': [
-                  
-            ]
-
-	},
-    
-      'CooperativeTwoAgent': {
         
 		'WALLS': [
                   [0, 3],
@@ -114,11 +39,6 @@ LAYOUTS = {
                   [1, 1]
 		],
         
-		'AGENTS': [
-                  [3, 1],
-                  [5, 1]
-		],
-        
 		'GOALS': [
                   [6, 5]
 		],
@@ -130,33 +50,14 @@ LAYOUTS = {
             ]
 
 	},
-
-      'CollusiveThreeAgent': {
-          
-          	'WALLS': [
-                  
-		],
-        
-		'DOORS': [
-            
-		],
-        
-		'PLATES': [
-            
-		],
-        
-		'AGENTS': [
-            
-		],
-        
-		'GOALS': [
-            
-		],
-        
-            'ESCAPES': [
-                  
-            ]
-
-      }
     
+}
+
+LAYERS = {
+    'agents': 0,
+    'walls': 1,
+    'doors': 2,
+    'plates': 3,
+    'goals': 4,
+    'escapes': 5
 }

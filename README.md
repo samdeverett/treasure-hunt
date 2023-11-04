@@ -99,7 +99,7 @@ To view a demonstration of the policy learned via training, run `demo.py`:
 
 ```shell
 cd treasurehunt
-python train.py --env_name ExampleEnv --checkpoint [number of training iterations]
+python demo.py --env_name ExampleEnv --checkpoint [number of training iterations]
 ```
 
 A window will pop up with the rendered game and the agents will take one step each time a key is pressed until the game ends or the script is terminated.
@@ -109,6 +109,13 @@ A window will pop up with the rendered game and the agents will take one step ea
 ### Layout
 
 A layout describes the starting position of all entities within an environment: `Agents`, `Walls`, `Doors`, `Plates`, `Goals`, `Escapes`. All layouts are stored in `assets.py`. To create a new layout, add an item to the `LAYOUTS` dictionary with the name of the layout as the key and a dictionary of Entity-List pairs with the starting positions of each instance of the entity.
+
+To view a layout, create an environment with it in `eng_configs.py` and run:
+
+```shell
+cd treasurehunt
+python render.py --env_name [environment name]
+```
 
 ### Reward Functions
 

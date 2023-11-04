@@ -1,6 +1,4 @@
-"""
-2D rendering of the pressure plate domain
-"""
+"""2D rendering of the Treasure Hunt environment."""
 
 import math
 import os
@@ -44,7 +42,7 @@ except ImportError as e:
 BADGES = 'abcdefghijklmnopqrstuvwxyz'
 
 RAD2DEG = 57.29577951308232
-# # Define some colors
+# Define some colors
 _BLACK = (0, 0, 0)
 _WHITE = (255, 255, 255)
 _GREEN = (0, 255, 0)
